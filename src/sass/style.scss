@@ -34,7 +34,7 @@ html.menu-active,
 }
 
 body {
-	font: 400 2em / 1.5em 'Cardo', serif;
+	font: 400 2em / 1.5em 'ankeregular';
 	color: $color-blue-30;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -43,7 +43,7 @@ body {
 }
 
 a {
-	color: $color-blue-15;
+	color: $color-red-95;
 	text-decoration: none;
 	font-weight: 400;
 	transition: all ease-out 0.2s;
@@ -54,7 +54,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'panefresco', sans-serif;
 	text-rendering: optimizeLegibility;
 	color: $color-black;
 }
@@ -91,6 +91,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 p, ul, ol {
     margin: 2em auto;
+    font-family: 'ankeregular';
 }
 
 ul {
@@ -104,7 +105,7 @@ ol > li:before {
 	position: absolute;
 	width: 1.5em;
 	margin-left: -2em;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'panefresco', sans-serif;
 	font-size: 1em;
 	font-weight: 500;
 	line-height: 1.5em;
@@ -283,7 +284,7 @@ table td {
     border: 1px solid $color-gray-90;
 }
 table th {
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'panefresco', sans-serif;
 	font-weight: 500;
 	font-size: 0.75em;
 	line-height: 1.25em;
@@ -401,11 +402,16 @@ img {
 	z-index: 10;
 	margin: 0;
 	padding: 0;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'panefresco', sans-serif;
 	font-weight: 700;
 	font-size: 2em;
 	line-height: 1em;
 	text-decoration: none;
+	img {
+		display:inline-block;
+		margin:0;
+		&:after { content:"\A"; white-space:pre; }
+	}
 }
 .home-template .blog-name {
 	font-size: 3em;
@@ -640,7 +646,7 @@ img {
 #menu li a {
 	display: block;
 	padding: 1.25em 1.5em;
-	color: $color-blue-15;
+	color: $color-red-95;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	font-weight: 400;
@@ -954,7 +960,7 @@ img {
 }
 .post-share a:hover,
 .post-share a:focus {
-	background-color: $color-blue-15;
+	background-color: $color-red-95;
 }
 .post-share a i {
 	color: inherit;
@@ -975,7 +981,7 @@ img {
 .post-tags {
 	max-width: 75%;
 	float: left;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'panefresco', sans-serif;
 }
 .post-tags a {
 	display: inline-block;
